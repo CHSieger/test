@@ -80,20 +80,13 @@ xui.Class('App', 'xui.Module',{
                         "type" : "control",
                         "target" : "textfeld",
                         "args" : [
-                            "{page.textfeld.setUIValue()}",
-                            undefined,
-                            undefined,
-                            "test123"
-                        ],
-                        "method" : "setUIValue",
-                        "conditions" : [
                             {
-                                "left" : "{args[2]}",
-                                "symbol" : "=",
-                                "right" : "true"
+                                "value" : "montag"
+                            },
+                            {
                             }
                         ],
-                        "redirection" : "other:callback:call"
+                        "method" : "setProperties"
                     }
                 ])
             );
