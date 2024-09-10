@@ -22,27 +22,31 @@ xui.Class('App', 'xui.Module',{
             
             append(
                 xui.create("xui.UI.Button")
-                .setHost(host,"knopf")
+                .setHost(host,"btn_Main")
                 .setName("btn")
-                .setLeft("15.238095238095237em")
-                .setTop("25.142857142857142em")
+                .setLeft("3.8095238095238093em")
+                .setTop("14.476190476190476em")
                 .setWidth("12.114285714285714em")
                 .setHeight("5.866666666666666em")
-                .setCaption("Button")
+                .setCaption("Text erzeugen!")
                 .onClick([
                     {
                         "desc" : "Action 1",
                         "type" : "control",
                         "target" : "textfeld",
                         "args" : [
-                            "{page.textfeld.setUIValue()}",
-                            undefined,
-                            undefined,
-                            "hallo test"
+                            "{page.textfeld.setUIValue()}"
                         ],
                         "method" : "setUIValue",
-                        "redirection" : "other:callback:call",
-                        "event" : 1
+                        "event" : 1,
+                        "conditions" : [
+                            {
+                                "left" : "{true}",
+                                "symbol" : "defined",
+                                "right" : ""
+                            }
+                        ],
+                        "redirection" : "other:callback:call"
                     },
                     "_knopf_onclick"
                 ])
@@ -54,13 +58,80 @@ xui.Class('App', 'xui.Module',{
                 .setName("textfeld")
                 .setDataField("hallo")
                 .setReadonly(true)
-                .setLeft("28.19047619047619em")
-                .setTop("9.142857142857142em")
-                .setWidth("18em")
+                .setLeft("1.5238095238095237em")
+                .setTop("2.2857142857142856em")
+                .setWidth("20.266666666666666em")
                 .setHeight("10em")
-                .setLabelSize("8em")
-                .setLabelCaption("Text Area")
+                .setLabelSize("10em")
+                .setLabelCaption("Text zum Kopieren:")
                 .setMultiLines(true)
+            );
+            
+            append(
+                xui.create("xui.UI.CheckBox")
+                .setHost(host,"chkBox_Montag")
+                .setLeft("25.904761904761905em")
+                .setTop("3.0476190476190474em")
+                .setWidth("12em")
+                .setCaption("Montag")
+                .onChange([
+                    {
+                        "desc" : "Action 1",
+                        "type" : "control",
+                        "target" : "textfeld",
+                        "args" : [
+                            "{page.textfeld.setUIValue()}",
+                            undefined,
+                            undefined,
+                            "test123"
+                        ],
+                        "method" : "setUIValue",
+                        "conditions" : [
+                            {
+                                "left" : "{args[2]}",
+                                "symbol" : "=",
+                                "right" : "true"
+                            }
+                        ],
+                        "redirection" : "other:callback:call"
+                    }
+                ])
+            );
+            
+            append(
+                xui.create("xui.UI.CheckBox")
+                .setHost(host,"chkBox_Dienstag")
+                .setLeft("25.904761904761905em")
+                .setTop("4.571428571428571em")
+                .setWidth("12em")
+                .setCaption("Dienstag")
+            );
+            
+            append(
+                xui.create("xui.UI.CheckBox")
+                .setHost(host,"chkBox_Mittwoch")
+                .setLeft("25.904761904761905em")
+                .setTop("6.095238095238095em")
+                .setWidth("12em")
+                .setCaption("Mittwoch")
+            );
+            
+            append(
+                xui.create("xui.UI.CheckBox")
+                .setHost(host,"chkBox_Donnerstag")
+                .setLeft("25.904761904761905em")
+                .setTop("7.619047619047619em")
+                .setWidth("12em")
+                .setCaption("Donnerstag")
+            );
+            
+            append(
+                xui.create("xui.UI.CheckBox")
+                .setHost(host,"chkBox_Freitag")
+                .setLeft("25.904761904761905em")
+                .setTop("9.142857142857142em")
+                .setWidth("12em")
+                .setCaption("Freitag")
             );
             
             return children;
