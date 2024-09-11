@@ -107,12 +107,11 @@ xui.constant = {
 };
 // ]]Constant Data
 
-
 // [[Develop Env Setting
 xui.ini.$DevEnv = {
     "designViewConf" : {
-        "width" : 480,
-        "height" : 800
+        "width" : 240,
+        "height" : 320
     }
 };
 // ]]Develop Env Setting
