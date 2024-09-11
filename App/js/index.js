@@ -86,6 +86,11 @@ xui.Class('App', 'xui.Module',{
             );
             
             append(
+                xui.create("xui.MQTT")
+                .setHost(host,"xui_mqtt1")
+            );
+            
+            append(
                 xui.create("xui.UI.CSSBox")
                 .setHost(host,"xui_ui_cssbox4")
                 .setClassName("xui-css-vb")
