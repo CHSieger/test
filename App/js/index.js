@@ -68,7 +68,6 @@ xui.Class('App', 'xui.Module',{
                 .setHeight("10em")
                 .setLabelSize("10em")
                 .setLabelCaption("Text zum Kopieren:")
-                .setMultiLines(false)
                 .setValue("super")
             );
             
@@ -84,15 +83,15 @@ xui.Class('App', 'xui.Module',{
                     {
                         "desc" : "Action 1",
                         "type" : "control",
-                        "target" : "textfeld",
+                        "target" : "xui_ui_element1",
                         "args" : [
-                            "{page.textfeld.setUIValue()}",
-                            undefined,
-                            undefined,
-                            "6 Stunden:  1-2 Std. -->  3-4 Std. -->  5-6 Std. -->   ESS --> 7.48"
+                            {
+                                "html" : "<div><font color=\"#0000cd\" face=\"Consolas, Menlo, courier new, monospace\"><span style=\"font-size: 15px;\">1-2 Std. --&gt;&nbsp;</span></font></div><div><font color=\"#0000cd\" face=\"Consolas, Menlo, courier new, monospace\"><span style=\"font-size: 15px;\">3-4 Std. --&gt;&nbsp;</span></font></div><div><font color=\"#0000cd\" face=\"Consolas, Menlo, courier new, monospace\"><span style=\"font-size: 15px;\">5-6 Std. --&gt;&nbsp;</span></font></div><div><font color=\"#0000cd\" face=\"Consolas, Menlo, courier new, monospace\"><span style=\"font-size: 15px;\"><br></span></font></div><div><font color=\"#0000cd\" face=\"Consolas, Menlo, courier new, monospace\"><span style=\"font-size: 15px;\">ESS --&gt; 7.48</span></font></div>"
+                            },
+                            {
+                            }
                         ],
-                        "method" : "setUIValue",
-                        "redirection" : "other:callback:call"
+                        "method" : "setProperties"
                     }
                 ])
             );
@@ -136,10 +135,10 @@ xui.Class('App', 'xui.Module',{
             append(
                 xui.create("xui.UI.Element")
                 .setHost(host,"xui_ui_element1")
-                .setLeft("22.857142857142858em")
-                .setTop("26.666666666666668em")
-                .setWidth("18.666666666666668em")
-                .setHeight("9.371428571428572em")
+                .setLeft("24.38095238095238em")
+                .setTop("24.38095238095238em")
+                .setWidth("8.761904761904763em")
+                .setHeight("13.942857142857143em")
                 .setVisibility("visible")
                 .setHtml("<font color=\"#0000cd\" face=\"Consolas, Menlo, courier new, monospace\"><span style=\"font-size: 15px;\">khghjjvvfkhz</span></font>")
             );
