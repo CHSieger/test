@@ -74,19 +74,20 @@ xui.Class('App', 'xui.Module',{
                 .setTop("3.0476190476190474em")
                 .setWidth("12em")
                 .setCaption("Montag")
+                .setValue(true)
                 .onChange([
                     {
                         "desc" : "Action 1",
                         "type" : "control",
                         "target" : "textfeld",
                         "args" : [
-                            {
-                                "value" : "montag"
-                            },
-                            {
-                            }
+                            "{page.textfeld.setUIValue()}",
+                            undefined,
+                            undefined,
+                            "6 Stunden:  1-2 Std. -->  3-4 Std. -->  5-6 Std. -->   ESS --> 7.48"
                         ],
-                        "method" : "setProperties"
+                        "method" : "setUIValue",
+                        "redirection" : "other:callback:call"
                     }
                 ])
             );
