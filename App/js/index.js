@@ -33,7 +33,6 @@ xui.Class('App', 'xui.Module',{
                 .setTop("2.2857142857142856em")
                 .setWidth("5.942857142857143em")
                 .setCaption("8 Std.")
-                .setValue(true)
                 .onChange([
                     {
                         "desc" : "Action 1",
@@ -69,7 +68,6 @@ xui.Class('App', 'xui.Module',{
                 .setTop("2.2857142857142856em")
                 .setWidth("5.180952380952381em")
                 .setCaption("6 Std.")
-                .setValue(true)
                 .onChange([
                     {
                         "desc" : "Action 1",
