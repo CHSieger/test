@@ -27,55 +27,10 @@ xui.Class('App', 'xui.Module',{
             );
             
             append(
-                xui.create("xui.UI.Button")
-                .setHost(host,"btn_Main")
-                .setName("btn")
-                .setLeft("3.8095238095238093em")
-                .setTop("14.476190476190476em")
-                .setWidth("12.114285714285714em")
-                .setHeight("5.866666666666666em")
-                .setCaption("Text erzeugen!")
-                .onClick([
-                    {
-                        "desc" : "Action 1",
-                        "type" : "control",
-                        "target" : "textfeld",
-                        "args" : [
-                            {
-                                "value" : ""
-                            },
-                            {
-                            }
-                        ],
-                        "method" : "setProperties",
-                        "event" : 1,
-                        "okFlag" : "_DI_succeed",
-                        "koFlag" : "_DI_fail"
-                    },
-                    "_knopf_onclick"
-                ])
-            );
-            
-            append(
-                xui.create("xui.UI.Input")
-                .setHost(host,"textfeld")
-                .setName("textfeld")
-                .setDataField("hallo")
-                .setReadonly(true)
-                .setLeft("1.5238095238095237em")
-                .setTop("2.2857142857142856em")
-                .setWidth("16.457142857142856em")
-                .setHeight("10em")
-                .setLabelSize("10em")
-                .setLabelCaption("Text zum Kopieren:")
-                .setValue("super")
-            );
-            
-            append(
                 xui.create("xui.UI.CheckBox")
                 .setHost(host,"chkBox_8std")
-                .setLeft("25.904761904761905em")
-                .setTop("3.0476190476190474em")
+                .setLeft("1.5238095238095237em")
+                .setTop("2.2857142857142856em")
                 .setWidth("12em")
                 .setCaption("8 Std.")
                 .setValue(true)
@@ -99,8 +54,8 @@ xui.Class('App', 'xui.Module',{
             append(
                 xui.create("xui.UI.Element")
                 .setHost(host,"xui_ui_element1")
-                .setLeft("36.57142857142857em")
-                .setTop("3.0476190476190474em")
+                .setLeft("1.5238095238095237em")
+                .setTop("4.571428571428571em")
                 .setWidth("15.619047619047619em")
                 .setHeight("8.60952380952381em")
                 .setVisibility("visible")
