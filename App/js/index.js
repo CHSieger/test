@@ -128,6 +128,16 @@ xui.Class('App', 'xui.Module',{
                 .setCaption("Freitag")
             );
             
+            append(
+                xui.create("xui.UI.Element")
+                .setHost(host,"xui_ui_element1")
+                .setLeft("22.857142857142858em")
+                .setTop("26.666666666666668em")
+                .setWidth("18.666666666666668em")
+                .setHeight("9.371428571428572em")
+                .setHtml("<span class=\"tagnamecolor\" style=\"box-sizing: inherit; color: brown; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px;\"><span class=\"tagcolor\" style=\"box-sizing: inherit; color: mediumblue;\">&lt;</span>p<span class=\"tagcolor\" style=\"box-sizing: inherit; color: mediumblue;\">&gt;</span></span><span style=\"color: rgb(255, 255, 255); font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px; background-color: rgb(21, 32, 43);\">This is a paragraph.</span><span class=\"tagnamecolor\" style=\"box-sizing: inherit; color: brown; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px;\"><span class=\"tagcolor\" style=\"box-sizing: inherit; color: mediumblue;\">&lt;</span>/p<span class=\"tagcolor\" style=\"box-sizing: inherit; color: mediumblue;\">&gt;</span></span><br style=\"box-sizing: inherit; color: rgb(255, 255, 255); font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px;\"><span class=\"tagnamecolor\" style=\"box-sizing: inherit; color: brown; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px;\"><span class=\"tagcolor\" style=\"box-sizing: inherit; color: mediumblue;\">&lt;</span>p<span class=\"tagcolor\" style=\"box-sizing: inherit; color: mediumblue;\">&gt;</span></span><span style=\"color: rgb(255, 255, 255); font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px; background-color: rgb(21, 32, 43);\">This is another paragraph.</span><span class=\"tagnamecolor\" style=\"box-sizing: inherit; color: brown; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px;\"><span class=\"tagcolor\" style=\"box-sizing: inherit; color: mediumblue;\">&lt;</span>/p<span class=\"tagcolor\" style=\"box-sizing: inherit; color: mediumblue;\">&gt;</span></span>")
+            );
+            
             return children;
             // ]]Code created by CrossUI RAD Studio
         },
