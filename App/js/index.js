@@ -31,7 +31,7 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"chkBox_8std")
                 .setLeft("1.5238095238095237em")
                 .setTop("2.2857142857142856em")
-                .setWidth("12em")
+                .setWidth("5.942857142857143em")
                 .setCaption("8 Std.")
                 .setValue(true)
                 .onChange([
@@ -60,6 +60,31 @@ xui.Class('App', 'xui.Module',{
                 .setHeight("8.60952380952381em")
                 .setVisibility("visible")
                 .setHtml("<div><font color=\"#0000cd\" face=\"Consolas, Menlo, courier new, monospace\"><span style=\"font-size: 15px;\">1-2 Std. --&gt;&nbsp;</span></font></div><div><font color=\"#0000cd\" face=\"Consolas, Menlo, courier new, monospace\"><span style=\"font-size: 15px;\">3-4 Std. --&gt;&nbsp;</span></font></div><div><font color=\"#0000cd\" face=\"Consolas, Menlo, courier new, monospace\"><span style=\"font-size: 15px;\">5-6 Std. --&gt;&nbsp;</span></font></div><div><font color=\"#0000cd\" face=\"Consolas, Menlo, courier new, monospace\"><span style=\"font-size: 15px;\"><br></span></font></div><div><font color=\"#0000cd\" face=\"Consolas, Menlo, courier new, monospace\"><span style=\"font-size: 15px;\">ESS --&gt; 7.48</span></font></div>")
+            );
+            
+            append(
+                xui.create("xui.UI.CheckBox")
+                .setHost(host,"xui_ui_checkbox59")
+                .setLeft("6.857142857142857em")
+                .setTop("2.2857142857142856em")
+                .setWidth("5.180952380952381em")
+                .setCaption("6 Std.")
+                .setValue(true)
+                .onChange([
+                    {
+                        "desc" : "Action 1",
+                        "type" : "control",
+                        "target" : "xui_ui_element1",
+                        "args" : [
+                            {
+                                "html" : "<div><span style=\"color: rgb(0, 0, 205); font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px;\">1-2 Std. --&gt;&nbsp;</span></div><div><font color=\"#0000cd\" face=\"Consolas, Menlo, courier new, monospace\"><span style=\"font-size: 15px;\"><div style=\"\">3-4 Std. --&gt;&nbsp;</div><div style=\"\">5-6 Std. --&gt;&nbsp;</div><div style=\"\">7-8 Std. --&gt;</div><div style=\"\"><br></div><div style=\"\">ESS --&gt; 7.48</div></span></font></div><div><font color=\"#0000cd\" face=\"Consolas, Menlo, courier new, monospace\"><span style=\"font-size: 15px;\">ESS --&gt; 7.48</span></font></div>"
+                            },
+                            {
+                            }
+                        ],
+                        "method" : "setProperties"
+                    }
+                ])
             );
             
             append(
