@@ -68,7 +68,8 @@ xui.Class('App', 'xui.Module',{
                 .setHeight("10em")
                 .setLabelSize("10em")
                 .setLabelCaption("Text zum Kopieren:")
-                .setMultiLines(true)
+                .setMultiLines(false)
+                .setValue("super")
             );
             
             append(
