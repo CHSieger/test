@@ -73,11 +73,11 @@ xui.Class('App', 'xui.Module',{
             
             append(
                 xui.create("xui.UI.CheckBox")
-                .setHost(host,"chkBox_Montag")
+                .setHost(host,"chkBox_8std")
                 .setLeft("25.904761904761905em")
                 .setTop("3.0476190476190474em")
                 .setWidth("12em")
-                .setCaption("Montag")
+                .setCaption("8 Std.")
                 .setValue(true)
                 .onChange([
                     {
@@ -86,8 +86,7 @@ xui.Class('App', 'xui.Module',{
                         "target" : "xui_ui_element1",
                         "args" : [
                             {
-                                "nodeName" : "xui",
-                                "html" : "<div><font color=\"#0000cd\" face=\"Consolas, Menlo, courier new, monospace\"><span style=\"font-size: 15px;\">1-2 Std. --&gt;&nbsp;</span></font></div><div><font color=\"#0000cd\" face=\"Consolas, Menlo, courier new, monospace\"><span style=\"font-size: 15px;\">3-4 Std. --&gt;&nbsp;</span></font></div><div><font color=\"#0000cd\" face=\"Consolas, Menlo, courier new, monospace\"><span style=\"font-size: 15px;\">5-6 Std. --&gt;&nbsp;</span></font></div><div><font color=\"#0000cd\" face=\"Consolas, Menlo, courier new, monospace\"><span style=\"font-size: 15px;\"><br></span></font></div><div><font color=\"#0000cd\" face=\"Consolas, Menlo, courier new, monospace\"><span style=\"font-size: 15px;\">ESS --&gt; 7.48</span></font></div>"
+                                "html" : "<div><font color=\"#0000cd\" face=\"Consolas, Menlo, courier new, monospace\"><span style=\"font-size: 15px;\">1-2 Std. --&gt;&nbsp;</span></font></div><div><font color=\"#0000cd\" face=\"Consolas, Menlo, courier new, monospace\"><span style=\"font-size: 15px;\">3-4 Std. --&gt;&nbsp;</span></font></div><div><font color=\"#0000cd\" face=\"Consolas, Menlo, courier new, monospace\"><span style=\"font-size: 15px;\">5-6 Std. --&gt;&nbsp;</span></font></div><div><font color=\"#0000cd\" face=\"Consolas, Menlo, courier new, monospace\"><span style=\"font-size: 15px;\">7-8 Std. --&gt;</span></font></div><div><font color=\"#0000cd\" face=\"Consolas, Menlo, courier new, monospace\"><span style=\"font-size: 15px;\"><br></span></font></div><div><font color=\"#0000cd\" face=\"Consolas, Menlo, courier new, monospace\"><span style=\"font-size: 15px;\">ESS --&gt; 7.48</span></font></div>"
                             },
                             {
                             }
@@ -98,50 +97,14 @@ xui.Class('App', 'xui.Module',{
             );
             
             append(
-                xui.create("xui.UI.CheckBox")
-                .setHost(host,"chkBox_Dienstag")
-                .setLeft("25.904761904761905em")
-                .setTop("4.571428571428571em")
-                .setWidth("12em")
-                .setCaption("Dienstag")
-            );
-            
-            append(
-                xui.create("xui.UI.CheckBox")
-                .setHost(host,"chkBox_Mittwoch")
-                .setLeft("25.904761904761905em")
-                .setTop("6.095238095238095em")
-                .setWidth("12em")
-                .setCaption("Mittwoch")
-            );
-            
-            append(
-                xui.create("xui.UI.CheckBox")
-                .setHost(host,"chkBox_Donnerstag")
-                .setLeft("25.904761904761905em")
-                .setTop("7.619047619047619em")
-                .setWidth("12em")
-                .setCaption("Donnerstag")
-            );
-            
-            append(
-                xui.create("xui.UI.CheckBox")
-                .setHost(host,"chkBox_Freitag")
-                .setLeft("25.904761904761905em")
-                .setTop("9.142857142857142em")
-                .setWidth("12em")
-                .setCaption("Freitag")
-            );
-            
-            append(
                 xui.create("xui.UI.Element")
                 .setHost(host,"xui_ui_element1")
-                .setLeft("24.38095238095238em")
-                .setTop("24.38095238095238em")
-                .setWidth("8.761904761904763em")
-                .setHeight("13.942857142857143em")
+                .setLeft("36.57142857142857em")
+                .setTop("3.0476190476190474em")
+                .setWidth("15.619047619047619em")
+                .setHeight("8.60952380952381em")
                 .setVisibility("visible")
-                .setHtml("<font color=\"#0000cd\" face=\"Consolas, Menlo, courier new, monospace\"><span style=\"font-size: 15px;\">khghjjvvfkhz</span></font>")
+                .setHtml("<div><font color=\"#0000cd\" face=\"Consolas, Menlo, courier new, monospace\"><span style=\"font-size: 15px;\">1-2 Std. --&gt;&nbsp;</span></font></div><div><font color=\"#0000cd\" face=\"Consolas, Menlo, courier new, monospace\"><span style=\"font-size: 15px;\">3-4 Std. --&gt;&nbsp;</span></font></div><div><font color=\"#0000cd\" face=\"Consolas, Menlo, courier new, monospace\"><span style=\"font-size: 15px;\">5-6 Std. --&gt;&nbsp;</span></font></div><div><font color=\"#0000cd\" face=\"Consolas, Menlo, courier new, monospace\"><span style=\"font-size: 15px;\"><br></span></font></div><div><font color=\"#0000cd\" face=\"Consolas, Menlo, courier new, monospace\"><span style=\"font-size: 15px;\">ESS --&gt; 7.48</span></font></div>")
             );
             
             append(
