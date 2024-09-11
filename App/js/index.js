@@ -21,6 +21,12 @@ xui.Class('App', 'xui.Module',{
             var host=this, children=[], append=function(child){children.push(child.get(0));};
             
             append(
+                xui.create("xui.DataBinder")
+                .setHost(host,"databinder_1")
+                .setName("databinder_1")
+            );
+            
+            append(
                 xui.create("xui.UI.Button")
                 .setHost(host,"btn_Main")
                 .setName("btn")
@@ -35,18 +41,16 @@ xui.Class('App', 'xui.Module',{
                         "type" : "control",
                         "target" : "textfeld",
                         "args" : [
-                            "{page.textfeld.setUIValue()}"
-                        ],
-                        "method" : "setUIValue",
-                        "event" : 1,
-                        "conditions" : [
                             {
-                                "left" : "{true}",
-                                "symbol" : "defined",
-                                "right" : ""
+                                "value" : ""
+                            },
+                            {
                             }
                         ],
-                        "redirection" : "other:callback:call"
+                        "method" : "setProperties",
+                        "event" : 1,
+                        "okFlag" : "_DI_succeed",
+                        "koFlag" : "_DI_fail"
                     },
                     "_knopf_onclick"
                 ])
@@ -136,7 +140,13 @@ xui.Class('App', 'xui.Module',{
                 .setWidth("18.666666666666668em")
                 .setHeight("9.371428571428572em")
                 .setVisibility("visible")
-                .setHtml("<span class=\"tagnamecolor\" style=\"box-sizing: inherit; color: brown; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px;\"><span class=\"tagcolor\" style=\"box-sizing: inherit; color: mediumblue;\">&lt;</span>p<span class=\"tagcolor\" style=\"box-sizing: inherit; color: mediumblue;\">&gt;</span></span><span style=\"color: rgb(255, 255, 255); font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px; background-color: rgb(21, 32, 43);\">This is a paragraph.</span><span class=\"tagnamecolor\" style=\"box-sizing: inherit; color: brown; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px;\"><span class=\"tagcolor\" style=\"box-sizing: inherit; color: mediumblue;\">&lt;</span>/p<span class=\"tagcolor\" style=\"box-sizing: inherit; color: mediumblue;\">&gt;</span></span><br style=\"box-sizing: inherit; color: rgb(255, 255, 255); font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px;\"><span class=\"tagnamecolor\" style=\"box-sizing: inherit; color: brown; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px;\"><span class=\"tagcolor\" style=\"box-sizing: inherit; color: mediumblue;\">&lt;</span>p<span class=\"tagcolor\" style=\"box-sizing: inherit; color: mediumblue;\">&gt;</span></span><span style=\"color: rgb(255, 255, 255); font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px; background-color: rgb(21, 32, 43);\">This is another paragraph.</span><span class=\"tagnamecolor\" style=\"box-sizing: inherit; color: brown; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px;\"><span class=\"tagcolor\" style=\"box-sizing: inherit; color: mediumblue;\">&lt;</span>/p<span class=\"tagcolor\" style=\"box-sizing: inherit; color: mediumblue;\">&gt;</span></span>")
+                .setHtml("<font color=\"#0000cd\" face=\"Consolas, Menlo, courier new, monospace\"><span style=\"font-size: 15px;\">khghjjvvfkhz</span></font>")
+            );
+            
+            append(
+                xui.create("xui.UI.CSSBox")
+                .setHost(host,"xui_ui_cssbox4")
+                .setClassName("xui-css-vb")
             );
             
             return children;
