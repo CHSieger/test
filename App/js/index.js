@@ -86,39 +86,12 @@ xui.Class('App', 'xui.Module',{
                         "target" : "xui_ui_element1",
                         "args" : [
                             {
-                                "html" : "<div><font color=\"#0000cd\" face=\"Consolas, Menlo, courier new, monospace\"><span style=\"font-size: 15px;\">1-2 Std. --&gt;&nbsp;</span></font></div><div><font color=\"#0000cd\" face=\"Consolas, Menlo, courier new, monospace\"><span style=\"font-size: 15px;\">3-4 Std. --&gt;&nbsp;</span></font></div><div><font color=\"#0000cd\" face=\"Consolas, Menlo, courier new, monospace\"><span style=\"font-size: 15px;\">5-6 Std. --&gt;&nbsp;</span></font></div><div><font color=\"#0000cd\" face=\"Consolas, Menlo, courier new, monospace\"><span style=\"font-size: 15px;\">7-8 Std. --&gt;</span></font></div><div><font color=\"#0000cd\" face=\"Consolas, Menlo, courier new, monospace\"><span style=\"font-size: 15px;\"><br></span></font></div><div><font color=\"#0000cd\" face=\"Consolas, Menlo, courier new, monospace\"><span style=\"font-size: 15px;\">ESS --&gt; 7.48</span></font></div>"
+                                "html" : "<div><span style=\"color: rgb(0, 0, 205); font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px;\">1-2 Std. --&gt;&nbsp;</span></div><div><font color=\"#0000cd\" face=\"Consolas, Menlo, courier new, monospace\"><span style=\"font-size: 15px;\"><div style=\"\">3-4 Std. --&gt;&nbsp;</div><div style=\"\">5-6 Std. --&gt;&nbsp;</div><div style=\"\">7-8 Std. --&gt;</div><div style=\"\"><br></div><div style=\"\">ESS --&gt; 7.48</div></span></font></div><div><font color=\"#0000cd\" face=\"Consolas, Menlo, courier new, monospace\"><span style=\"font-size: 15px;\">ESS --&gt; 7.48</span></font></div>"
                             },
                             {
                             }
                         ],
-                        "method" : "setProperties",
-                        "conditions" : [
-                            {
-                                "left" : "{true}",
-                                "symbol" : "defined",
-                                "right" : ""
-                            }
-                        ]
-                    },
-                    {
-                        "desc" : "Action 2",
-                        "type" : "control",
-                        "target" : "xui_ui_element1",
-                        "args" : [
-                            {
-                                "html" : "<div><font color=\"#0000cd\" face=\"Consolas, Menlo, courier new, monospace\"><span style=\"font-size: 15px;\">1-2 Std. --&gt;&nbsp;</span></font></div><div><font color=\"#0000cd\" face=\"Consolas, Menlo, courier new, monospace\"><span style=\"font-size: 15px;\">3-4 Std. --&gt;&nbsp;</span></font></div><div><font color=\"#0000cd\" face=\"Consolas, Menlo, courier new, monospace\"><span style=\"font-size: 15px;\">5-6 Std. --&gt;&nbsp;</span></font></div><div><font color=\"#0000cd\" face=\"Consolas, Menlo, courier new, monospace\"><span style=\"font-size: 15px;\"><br></span></font></div><div><font color=\"#0000cd\" face=\"Consolas, Menlo, courier new, monospace\"><span style=\"font-size: 15px;\">ESS --&gt; 7.48</span></font></div>"
-                            },
-                            {
-                            }
-                        ],
-                        "method" : "setProperties",
-                        "conditions" : [
-                            {
-                                "left" : "{false}",
-                                "symbol" : "defined",
-                                "right" : ""
-                            }
-                        ]
+                        "method" : "setProperties"
                     }
                 ])
             );
