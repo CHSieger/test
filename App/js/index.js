@@ -64,7 +64,7 @@ xui.Class('App', 'xui.Module',{
                 .setReadonly(true)
                 .setLeft("1.5238095238095237em")
                 .setTop("2.2857142857142856em")
-                .setWidth("20.266666666666666em")
+                .setWidth("16.457142857142856em")
                 .setHeight("10em")
                 .setLabelSize("10em")
                 .setLabelCaption("Text zum Kopieren:")
